@@ -9,17 +9,15 @@
 
 <frameset rows="10%, 10%, 80%, 10%">
     <frame src="header.html" name="header" noresize scrolling="no">
-        <frame src="menu.html" name="menu" noresize scrolling="no"></frame>
+        <frame src="menu.html" name="menu" noresize scrolling="no">
 
-        <frameset cols="100%">
             <frameset cols="20%,*,20%">
-                <frame src="content1.html" name="content1">
-                <frame src="content2.html" name="content2">
-                <frame src="content3.html" name="content3">
+                <frame src="left.html" name="left">
+                    <frame src="main.html" name="main">
+                        <frame src="right.html" name="right">
             </frameset>
-        </frameset>
 
-        <frame src="footer.html" name="footer" noresize scrolling="no">
+            <frame src="footer.html" name="footer" noresize scrolling="no">
 </frameset>
 
 </html>
