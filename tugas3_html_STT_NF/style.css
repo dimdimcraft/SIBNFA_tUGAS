@@ -1,0 +1,219 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* umum*/
+h1 {
+    color: white;
+}
+
+/* Main Content Styling */
+.main-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f0fdfa, #c3e5e0);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading */
+.main-container h1 {
+    font-size: 28px;
+    color: #008080;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Introductory Text */
+.intro-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro-text strong {
+    color: #007777;
+    transition: color 0.3s ease-in-out;
+}
+
+.intro-text strong:hover {
+    color: #005555;
+    text-decoration: underline;
+}
+
+/* Quote Styling */
+.quote {
+    font-style: italic;
+    font-size: 16px;
+    color: #444;
+    padding: 10px;
+    border-left: 5px solid #008080;
+    background: rgba(0, 128, 128, 0.1);
+    display: inline-block;
+    margin-top: 15px;
+}
+
+
+/* Header */
+header {
+    background-color: #008080;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+header p {
+    color: white;
+}
+
+/* Navigasi Menu */
+nav {
+    background-color: #004d4d;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #007777;
+    border-radius: 5px;
+}
+
+/* Sidebar Kiri & Kanan */
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 15px;
+    height: 100%;
+    border-right: 1px solid #ddd;
+}
+
+fieldset {
+    border: 2px solid #008080;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    color: #008080;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #004d4d;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+h2 {
+    color: #008080;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #008080;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #008080;
+    color: white;
+}
+
+/* Gallery */
+.gallery-container {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 80%;
+}
+
+marquee {
+    padding: 15px 0;
+    background: #ffffff;
+    border: 2px solid #008080;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+marquee img {
+    width: 200px; /* Sesuaikan ukuran */
+    height: auto;
+    margin: 0 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+marquee img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+marquee img {
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #004d4d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+footer p {
+    color: white;
+}
