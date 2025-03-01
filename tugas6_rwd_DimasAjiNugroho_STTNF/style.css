@@ -1,0 +1,130 @@
+/* Menggunakan font yang lebih modern */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/* Styling untuk header (carousel) */
+.carousel-item img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #007bff !important;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #f8f9fa !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Sidebar Styling */
+fieldset {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Styling untuk iframe */
+iframe {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Styling untuk teks di dalam iframe */
+.intro-text {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.quote {
+    font-size: 1rem;
+    font-style: italic;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+footer i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+footer i:hover {
+    color: #007bff;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 250px;
+    }
+
+    .navbar .nav-link {
+        font-size: 0.9rem;
+    }
+
+    iframe {
+        height: 400px;
+    }
+}

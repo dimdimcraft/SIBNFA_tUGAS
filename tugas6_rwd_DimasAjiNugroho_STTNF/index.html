@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 6</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- header -->
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/2.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/3.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- navbar -->
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img class="img-icon" src="img/nf_logo.png" alt="Bootstrap" width="30" height="24">
+                        </a>
+                    </div>
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="study.html" target="mainContent">MyStudy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="gallery.html" target="mainContent">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dataTable.html" target="mainContent">DataTable</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html" target="mainContent">Login</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-light" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <!-- content -->
+            <div class="col-md-4">
+                <fieldset>
+                    <legend>Materi Fullstack</legend>
+                    <ul>
+                        <li><a href="https://learn.nfacademy.id/course/view.php?id=409" target="_blank">Desain Web</a>
+                        </li>
+                        <li><a href="https://learn.nfacademy.id/course/view.php?id=408" target="_blank">Soft Skill</a>
+                        </li>
+                        <li><a href="https://learn.nfacademy.id/course/view.php?id=410" target="_blank">UI/UX</a></li>
+                        <li><a href="https://learn.nfacademy.id/course/view.php?id=411" target="_blank">Pemrograman
+                                Javascript</a></li>
+                        <li><a href="https://learn.nfacademy.id/course/view.php?id=412" target="_blank">Database
+                                MYSQL</a></li>
+                    </ul>
+                </fieldset>
+            </div>
+            <!-- main content -->
+            <div class="col-md-8">
+                <iframe name="mainContent" width="100%" style="border: none;"
+            srcdoc="<h1>Selamat Datang di Halaman Utama!</h1>
+            <p class='intro-text'>Halo, teman-teman!<br>Gunakan navigasi di sebelah kanan untuk menjelajahi <strong>materi pembelajaran fullstack</strong>.</p>
+            <p class='quote' style='font-style: italic;'>Belajar adalah investasi terbaik untuk masa depan!</p>">
+        </iframe>
+
+            </div>
+        </div>
+
+        <footer class="d-flex justify-content-between align-items-center p-3 bg-dark text-white">
+            <p class="mb-0">© 2024 Dimas Aji Nugroho | STT Terpadu Nurul Fikri</p>
+            <div>
+                <a href="https://www.instagram.com/dimasaji_ngrho/" target="_blank"><i class="bi bi-instagram me-2" ></i></a>
+                <a href="https://www.facebook.com/dimasaji.nugroho.33?locale=id_ID" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
