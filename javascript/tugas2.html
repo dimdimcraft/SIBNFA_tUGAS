@@ -37,7 +37,7 @@
         let tunjanganKeluarga = (status == "menikah") ? 0.20 * gaji_pokok : 0;
 
         // menghitung total gaji
-        let totalGaji = gaji_pokok + tunjanganJabatan + BPJS + tunjanganKeluarga
+        let totalGaji = gaji_pokok + tunjanganJabatan - BPJS + tunjanganKeluarga
         console.log(totalGaji);
     </script>
 
