@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas 5</title>
+</head>
+<body>
+    <script>
+        // **Data Produk**
+let produkList = [
+    { id: 1, nama: "Laptop", harga: 12000000 },
+    { id: 2, nama: "Smartphone", harga: 5000000 },
+    { id: 3, nama: "Tablet", harga: 7000000 },
+    { id: 4, nama: "Smartwatch", harga: 2000000 },
+    { id: 5, nama: "Headphone", harga: 1500000 }
+];
+
+// **Menampilkan Produk dengan Destructuring**
+function tampilkanProduk() {
+    console.log("Daftar Produk:");
+    produkList.forEach(({ id, nama, harga }) => {
+        console.log(`ID: ${id}, Nama: ${nama}, Harga: Rp${harga}`);
+    });
+}
+
+// **Menambahkan Produk dengan Spread Operator**
+function tambahProduk(id, nama, harga) {
+    produkList = [...produkList, { id, nama, harga }];
+    console.log(`Produk ${nama} telah ditambahkan.`);
+}
+// **Menghapus Produk dengan Rest Parameter**
+function hapusProduk(id) {
+    produkList = produkList.filter(produk => produk.id !== id);
+    console.log(`Produk dengan ID ${id} telah dihapus.`);
+}
+
+// **Event Listener (Simulasi)**
+
+
+const eventHandler = {
+    tambah: (id, nama, harga) => tambahProduk(id, nama, harga),
+    hapus: (id) => hapusProduk(id),
+    tampilkan: () => tampilkanProduk()
+};
+
+// **Eksekusi Kode**
+eventHandler.tampilkan();  // Menampilkan produk awal
+eventHandler.tambah(6, "Monitor", 3000000); // Menambahkan produk baru
+eventHandler.hapus(2); // Menghapus produk dengan ID 2
+eventHandler.tampilkan();  // Menampilkan daftar produk terbaru
+
+    </script>
+</body>
+</html>
+
